@@ -1,0 +1,14 @@
+root = true
+
+# Indent everything, including HTML and CSS, by two spaces
+[*]
+indent_style = space
+indent_size = 2
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+# But, indent JavaScript by 4, which is the convention
+[*.js]
+indent_size = 4

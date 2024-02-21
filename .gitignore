@@ -1,0 +1,16 @@
+*
+
+!img/
+!js/
+!json/
+!styles/
+!.stylelintrc.json
+!package.json
+!package-lock.json
+!.babelrc
+!.editorconfig
+!.eslintrc
+!gulpfile.js
+!index.html
+!README.md
+!.gitignore
