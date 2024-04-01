@@ -1,24 +1,42 @@
-abcdef {                                 
-     color: cs275
+body {
+  font-family: 'Open Sans', sans-serif;
 }
 
+h1 {
+  font-size: 32px;
+  line-height: 38px;
+}
 
+.carousel {
+  width: 680px;
+  margin: 0 auto;
+  overflow: hidden;
+}
 
+.carousel-navigation {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
+.carousel-navigation a {
+  text-decoration: none;
+  color: black;
+}
 
+.carousel-slides {
+  display: flex;
+  transition: transform .5s ease;
+}
 
+.carousel-slide {
+  flex: 0 0 640px;
+  padding: 0 20px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.carousel-slide img {
+  width: 100%;
+  height: auto;
+}
