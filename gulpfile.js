@@ -6,6 +6,7 @@ const uglify = require(`gulp-uglify`);
 const cleanCSS = require(`gulp-clean-css`);
 const htmlmin = require(`gulp-htmlmin`);
 const imagemin = require(`gulp-imagemin`);
+const browserSync = require(`browser-sync`).create();
 const del = require(`del`);
 const rename = require(`gulp-rename`);
 
@@ -35,13 +36,28 @@ gulp.task(`babel`, () => {
         .pipe(gulp.dest(`js`));
 });
 
+gulp.task(`browserSync`,() => {
+    browserSync.init({
+        server: {
+            baseDir: `./`
+        }
+    });
+    gulp.watch([`js/*.js`, `styles/*.css`]).on(`change`, browserSync.reload);
+});
+
 gulp.task(`watch`, () => {
     gulp.watch([`**/*.js`, `!node_modules/**`], gulp.series(`lint-js`));
     gulp.watch(`styles/*.css`, gulp.series(`lint-css`));
     gulp.watch(`js/*.js`, gulp.series(`babel`));
 });
 
-gulp.task(`dev`, gulp.parallel(`watch`));
+// Development workflow
+gulp.task(`dev`, gulp.parallel(`browserSync`, () => {
+    gulp.watch(`js/*.js`, gulp.series(`lint-js`, `babel`));
+    gulp.watch(`styles/*.css`, gulp.series(`lint-css`));
+}));
+
+gulp.task(`default`, gulp.parallel(`dev`));
 
 // Production tasks
 gulp.task(`clean`, () => {
