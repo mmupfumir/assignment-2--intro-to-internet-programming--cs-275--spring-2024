@@ -1,0 +1,28 @@
+{
+  "name": "assignment",
+  "description": "☞ **Plagiarism in any form will result in failing the entire course. You’ve been duly warned.** ☜",
+  "version": "1.0.0",
+  "main": "gulpfile.js",
+  "devDependencies": {
+    "browser-sync": "^3.0.2",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-eslint": "^6.0.0",
+    "gulp-html": "^6.0.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-stylelint": "^13.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.24.0",
+    "@babel/preset-env": "^7.24.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-uglify": "^3.0.2",
+    "sass": "^1.72.0"
+  }
+}
