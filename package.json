@@ -1,0 +1,24 @@
+{
+  "name": "assignment-2--intro-to-internet-programming--cs275--spring-2024",
+  "version": "1.0.0",
+  "description": "not needed?",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "will p",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.24.3",
+    "@babel/preset-env": "^7.24.3",
+    "browser-sync": "^3.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-eslint": "^6.0.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-stylelint": "^13.0.0",
+    "gulp-uglify": "^3.0.2",
+    "uglify-js": "^3.17.4",
+    "gulp": "4.0.2"
+  }
+}
