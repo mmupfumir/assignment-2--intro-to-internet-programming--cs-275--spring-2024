@@ -1,24 +1,142 @@
-abcdef {                                 
-     color: cs275
+body {
+  text-align: center;
+  overflow: hidden;
 }
 
+:root {
+  --width-of-a-div: 640px;
+  --height-of-div: 860px;
+  --slides-position: -20px;
+}
 
+* {
+  margin: 0;
+  border: 0;
+}
 
+header {
+  line-height: 1.4;
+  font-family: 'Open Sans', sans-serif;
+}
 
+h1 {
+  font-size: 32px;
+  line-height: 38px;
+  font-weight: 600;
+  padding-top: 38px;
+  padding-bottom: 38px;
+}
 
+h2 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+  line-height: 1.4;
+}
 
+h3 {
+  padding-bottom: 38px;
+}
 
+h4 {
+  font-size: 12px;
+  line-height: 1.4;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
 
+h5 {
+  text-align: left;
+  line-height: 1.4;
+  padding-top: 10px;
+}
 
+p {
+  line-height: 1.4;
+  text-align: left;
+  font-family: 'Open Sans', sans-serif;
+}
 
+.artist-name {
+  text-decoration: none;
+}
 
+.photo-credit {
+  text-decoration: none;
+}
 
+.review-credit {
+  text-decoration: none;
+}
 
+.carousel {
+  width: var(--width-of-a-div);
+  height: var(--height-of-div);
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
 
+.carousel-slides {
+  width: calc(4 * var(--width-of-a-div));
+  height: var(--height-of-div);
+  display: flex;
+  margin-left: var(--slides-position);
+  transition: margin-left .5s ease;
+}
 
+.album {
+  display: inline-block;
+  width: var(--width-of-a-div);
+  height: var(--height-of-div);
+  padding-left: 20px;
+  padding-right: 20px;
+}
 
+.carousel-slides > div:nth-child(1) > .album-photo {
+  width: var(--width-of-a-div);
+  height: 427px;
+  background-image: url('../img/12392240423_1ebe6a740d_z.jpg');
+}
 
+.carousel-slides > div:nth-child(2) > .album-photo {
+  width: var(--width-of-a-div);
+  height: 427px;
+  background-image: url('../img/10835562453_30f4918d69_z.jpg');
+}
 
+.carousel-slides > div:nth-child(3) > .album-photo {
+  width: var(--width-of-a-div);
+  height: 480px;
+  background-image: url('../img/15022059070_3a7dde293e_z.jpg');
+}
 
+.carousel-slides > div:nth-child(4) > .album-photo {
+  width: var(--width-of-a-div);
+  height: 480px;
+  background-image: url('../img/60260329_b2194b7366_z.jpg');
+}
 
+.carousel-navigation {
+  position: absolute;
+  left: 50%;
+  top: 425px;
+  width: var(--width-of-a-div);
+  transform: translate(-50%, -50%);
+}
 
+.carousel-navigation a:nth-child(1) {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 2%;
+}
+
+.carousel-navigation a:nth-child(2) {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 2%;
+}
