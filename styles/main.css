@@ -1,24 +1,86 @@
-abcdef {                                 
-     color: cs275
+body {
+  font-family: 'Open Sans', sans-serif; /* Sets the default font for the entire webpage. */
+  font-weight: 300; /* Sets the default font weight to light (300). */
+  font-size: 16px; /* Sets the default font size to 16 pixels for readability. */
+  line-height: 1.4; /* Sets the default line height to 1.4 times the font size for better text spacing. */
 }
 
+h1 {
+  font-size: 32px; /* Increases the font size for <h1> elements to make them stand out. */
+  font-weight: 600; /* Makes <h1> elements bolder to catch attention. */
+  line-height: 38px; /* Increases line height for <h1> elements to improve readability of headings. */
+  text-align: center; /* Centers the text of <h1> elements. */
+}
 
+/* Carousel Styles */
+.carousel {
+  margin: 0 auto; /* Centers the carousel horizontally within its container. */
+  width: 640px; /* Sets a fixed width for the carousel to match slide widths. */
+  overflow: hidden; /* Hides any part of the slides that overflow the bounds of the carousel. */
+}
 
+.carousel-slides {
+  display: flex; /* Uses flexbox layout for slides, ensuring they're in a row and don't wrap. */
+  transition: margin-left 260ms ease-in-out; /* Animates the sliding motion for a smooth transition between slides. */
+}
 
+.carousel-navigation {
+  position: absolute; /* Positions navigation controls absolutely within their relative parent. */
+  top: 40%; /* Centers navigation controls vertically in their container. */
+}
 
+/* Slide Styles */
+#web-slide {
+  position: relative; /* Positions the slide relatively within its normal flow of the document. */
+  display: inline-block; /* Allows the slide to sit inline but accepts block-level styling. */
+  vertical-align: top; /* Aligns the slide to the top of its container. */
+  margin-left: -20px; /* Adjusts slide's position slightly to the left for layout purposes. */
+  padding: 20px; /* Adds space inside the slide around its content. */
+  width: 640px; /* Sets a fixed width for slides to ensure consistency. */
+  z-index: 1; /* Ensures the slide sits above the background layer. */
+}
 
+/* Navigation Arrows */
+#arrow-to-left {
+  position: absolute;
+  z-index: 3;
+}
 
+#arrow-to-right {
+  position: absolute;
+  left: 610px;
+  z-index: 0;
+}
 
+/* Content Styles */
+#album-info,
+#artist-info,
+#picture-info,
+#album-credit,
+#music-description {
+  text-align: center; /* Centers text for these elements. */
+}
 
+#album-info {
+  text-transform: uppercase; /* Converts all album info text to uppercase for stylistic emphasis. */
+  letter-spacing: 0.16em; /* Increases spacing between letters for clarity and style. */
+  font-weight: 600; /* Makes album info text bold. */
+}
 
+#artist-info {
+  font-weight: 300; /* Sets artist info text to a lighter weight for visual hierarchy. */
+  padding-bottom: 10px; /* Adds space below the artist info to separate it from the content below. */
+}
 
+#picture-info {
+  margin-top: 20px; /* Adds space above the picture to separate it from content above. */
+}
 
+#album-credit {
+  margin-top: 2px; /* Adds a small space above the album credit text. */
+  font-size: 16px; /* Ensures album credit text size matches the body default size. */
+}
 
-
-
-
-
-
-
-
-
+#music-description {
+  margin-top: 10px; /* Adds space above the music description to separate it from content above. */
+}

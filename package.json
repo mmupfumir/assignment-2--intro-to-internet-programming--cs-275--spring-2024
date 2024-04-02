@@ -1,0 +1,29 @@
+{
+  "name": "assignmentcopy-2--intro-to-internet-programming",
+  "version": "1.0.0",
+  "description": "Assignment 2 for Intro to Internet Programming",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rouniel Perez Salazar",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.24.0",
+    "@babel/preset-env": "^7.24.0",
+    "browser-sync": "^3.0.2",
+    "del": "^7.1.0",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-eslint": "^6.0.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-sass": "^5.1.0",
+    "gulp-stylelint": "^13.0.0",
+    "gulp-uglify": "^3.0.2",
+    "htmlmin": "^0.0.7",
+    "sass": "^1.72.0"
+  },
+  "dependencies": {
+    "gulp-image": "^6.3.1"
+  }
+}
