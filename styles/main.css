@@ -1,24 +1,29 @@
-abcdef {                                 
-     color: cs275
+:root {
+  --width-of-image: 640px;
 }
 
+* {
+  font-size: 16px;
+  line-height: 1.4;
+}
 
+body {
+  color: #ddd;
+}
 
+h1 {
+  font-size: 32px;
+  line-height: 38px;
+}
 
+.image-div {
+  width: var(--width-of-image);
+  overflow: hidden;
+  border: 4px solid transparent;
+  transition: cubic-bezier(.6, .6, 1, -.67);
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.image-section {
+  width: calc(4 * var(--width-of-image));
+  margin-left: 0;
+}
