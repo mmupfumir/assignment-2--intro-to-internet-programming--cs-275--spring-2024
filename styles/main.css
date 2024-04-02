@@ -1,24 +1,58 @@
-abcdef {                                 
-     color: cs275
+html,
+body,
+ul,
+ol {
+  margin: 0;
+  padding: 0;
 }
 
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.4;
+}
 
+header {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #333;
+  color: #fff;
+}
 
+h1 {
+  font-size: 32px;
+  line-height: 38px;
+  margin-bottom: 20px;
+}
 
+.carousel {
+  max-width: 680px;
+  margin: 0 auto;
+  overflow: hidden;
+}
 
+.carousel-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
 
+.carousel-navigation a {
+  text-decoration: none;
+}
 
+.carousel-slides {
+  display: flex;
+  transition: transform .5s ease;
+}
 
+.carousel-slide {
+  flex: 0 0 640px;
+  padding: 0 20px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
+.carousel-slide img {
+  width: 100%;
+  height: auto;
+}
