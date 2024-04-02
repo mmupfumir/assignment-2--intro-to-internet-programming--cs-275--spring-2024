@@ -1,4 +1,8 @@
-[
+
+
+
+ jsondata({
+  "objects":[
   {
     "artist": "Dawn of Midi",
     "album": "Dysnomia",
@@ -72,3 +76,4 @@
     }
   }
 ]
+ });

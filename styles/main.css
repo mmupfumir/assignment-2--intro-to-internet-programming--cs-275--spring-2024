@@ -1,24 +1,80 @@
-abcdef {                                 
-     color: cs275
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.4;
+  font-weight: bold;
 }
 
+h1 {
+  text-align: center;
+  line-height: 32px;
+  font-weight: bold;
+  font-size: 30px;
+  color: black;
+}
 
+.carousel {
+  margin: auto;
+  width: 640px;
+  overflow: hidden;
+}
 
+.carousel-slides {
+  width: max-content;
+  transition-property: margin-left;
+  transition-duration: 250ms;
+}
 
+#album {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: -20px;
+  padding: 20px;
+  width: 640px;
+  z-index: 1;
+}
 
+#ah {
+  text-transform: uppercase;
+  letter-spacing: .12em;
+  text-align: center;
+  font-weight: 600;
+}
 
+#ag {
+  text-align: center;
+  font-weight: 300;
+  padding-bottom: 5px;
+}
 
+#ac {
+  padding-top: 5px;
+  font-size: 14px;
+  text-align: center;
+  padding-bottom: 10px;
+}
 
+#ci {
+  padding-top: 5px;
+}
 
+#rc {
+  padding-bottom: 5px;
+}
 
+.carousel-navigation {
+  position: absolute;
+  top: 50%;
+}
 
+#LA {
+  position: absolute;
+  z-index: 3;
+}
 
-
-
-
-
-
-
-
-
-
+#RA {
+  position: absolute;
+  left: 610px;
+  z-index: 0;
+}
