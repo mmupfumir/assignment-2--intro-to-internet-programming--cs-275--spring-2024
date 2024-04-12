@@ -1,0 +1,15 @@
+{
+  "name": "compress-html",
+  "version": "1.0.0",
+  "description": "☞ **Plagiarism in any form will result in failing the entire course. You’ve been duly warned.** ☜",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Bryant-Ortiz",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-htmlmin": "^5.0.1"
+  }
+}

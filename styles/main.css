@@ -1,24 +1,50 @@
-abcdef {                                 
-     color: cs275
+/* * Your CSS must validate using the enclosed `.stylelintrc.json` file.
+* Your JavaScript must validate using the included `.eslintrc.json` file.
+* Your JavaScript must be transpiled to ES5.
+* Saving a file of type `.css`  or `.js` must lint/validate the respective language file. Recall that you needn’t validate HTML, because you’re not allowed to edit it, and it’s already been linted.
+* Saving any of the aforementioned source files should also refresh the browser, after linting.
+* The entire development track must be triggered by typing `gulp`. */
+
+body {
+  color: #ddd;
 }
 
+header {
+  font-weight: 600;
+  font-size: 16px;
+}
 
+header > h1 {
+  font-size: 32;
+  font-weight: 300;
+}
 
+div {
+  width: 640px;
+  padding-left: 20px;
+}
 
+/* Image display */
+div {
+  display: inline-block;
+  width: var(--width-of-a-div);
+  height: 100px;
+}
 
+div:nth-child(){
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
 
+section {
+  --width-of-a-div: 100px;
+  border: solid;
+  width: calc(4*var(--width-of-a-div));
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.second-section > div:nth-child(1){
+  display: flex;
+  background-color: white;
+  width: 100px;
+}
